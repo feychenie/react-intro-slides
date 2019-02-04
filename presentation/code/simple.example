@@ -1,0 +1,18 @@
+import React from 'react';
+import Hello from 'components/Hello';
+import Photo from 'components/Photo';
+
+const Profile = ({person}) => (
+    <div>
+        <Hello name={person.name} />
+        <Photo picture={person.avatar} />
+        {person.premium ?
+            <p>Premium member</p>
+          : <p><a href="/upgrade">Become premium</a></p>
+        }
+        {!person.emailValid &&
+            <p>Please validate your email</p>}
+    </div>
+);
+
+export default Profile;
