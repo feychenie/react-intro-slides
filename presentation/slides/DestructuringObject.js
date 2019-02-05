@@ -23,12 +23,12 @@ export default () => (
 
       const { name, birth: {year}, toHire: available, ...rest } = person;
 
-      console.log(name);
-      console.log(birth);
-      console.log(year);
-      console.log(toHire);
-      console.log(available);
-      console.log(rest)
+      console.log(name); // Fred
+      console.log(birth); // Error, undefined
+      console.log(year); // 1982
+      console.log(toHire); // Error, undefined
+      console.log(available); // false
+      console.log(rest) // { job: 'dev' }
       `}
     />
   </Slide>

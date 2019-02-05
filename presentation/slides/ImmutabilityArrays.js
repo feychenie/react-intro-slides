@@ -12,12 +12,12 @@ export default () => (
         const b = [1, 2];
         const c = a;
         const d = [...a]
-        console.log(a === b);
-        console.log(a === c);
-        console.log(a === d);
+        console.log(a === b); // false
+        console.log(a === c); // true
+        console.log(a === d); // false
 
-        c.push(3);
-        console.log(a === c);
+        c.push(3);    // mutation
+        console.log(a === c); // true
       `}
     />
   </Slide>

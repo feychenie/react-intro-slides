@@ -11,9 +11,9 @@ export default () => (
       source={`      const arr = [1,2,3,4,5,6];
       const [a, b, ...stuff] = arr;
 
-      console.log(a);
-      console.log(b);
-      console.log(stuff);`}
+      console.log(a); // 1
+      console.log(b); // 2
+      console.log(stuff); // [3,4,5,6]`}
     />
     <p>Destructuring function arguments</p>
     <CodePane
